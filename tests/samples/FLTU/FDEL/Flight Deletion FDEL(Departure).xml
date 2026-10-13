@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>91</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>FDEL</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-05-28T05:55:14.619Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">UK</aidx:Airline>
+                <aidx:FlightNumber>0835</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">DXN</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">MAA</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-05-28</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:SpecialAction>Delete</aidx:SpecialAction>
+            <aidx:LegData FlightClassification="PAX" InternationalStatus="Domestic">
+                <aidx:OperationalStatus CodeContext="9750" RepeatIndex="1">CHK</aidx:OperationalStatus>
+                <aidx:ServiceType>J</aidx:ServiceType>
+                <aidx:PlannedArrivalAptHistory CodeContext="3" RepeatIndex="1">MAA</aidx:PlannedArrivalAptHistory>
+                <aidx:CabinClass Class="7" RepeatIndex="1">
+                    <aidx:SeatCapacity>164</aidx:SeatCapacity>
+                </aidx:CabinClass>
+                <aidx:AssociatedFlightLegSchedule RepeatIndex="1">
+                    <aidx:DepartureAirport CodeContext="3">DXN</aidx:DepartureAirport>
+                    <aidx:ArrivalAirport CodeContext="3">MAA</aidx:ArrivalAirport>
+                </aidx:AssociatedFlightLegSchedule>
+                <aidx:RemarkTextCode CodeContext="9750" Qualifier="TER" RepeatIndex="1">CHK</aidx:RemarkTextCode>
+                <aidx:AirportResources Usage="Actual">
+                    <aidx:Resource DepartureOrArrival="Departure">
+                        <aidx:AircraftTerminal>T1</aidx:AircraftTerminal>
+                        <aidx:PublicTerminal RepeatIndex="1">T1</aidx:PublicTerminal>
+                    </aidx:Resource>
+                </aidx:AirportResources>
+                <aidx:OperationTime CodeContext="9750" OperationQualifier="OFB" RepeatIndex="1" TimeType="SCT">2024-05-28T08:55:00Z</aidx:OperationTime>
+                <aidx:AircraftInfo>
+                    <aidx:AircraftType>A320</aidx:AircraftType>
+                    <aidx:AircraftSubType>320</aidx:AircraftSubType>
+                    <aidx:AgentInfo DepartureOrArrival="Departure" Qualifier="0">UK</aidx:AgentInfo>
+                </aidx:AircraftInfo>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>DEP_2723686</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

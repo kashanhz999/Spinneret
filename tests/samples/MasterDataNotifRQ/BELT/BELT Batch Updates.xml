@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>5</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>BELT</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-05-28T07:08:00.017Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>5</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="1" name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="1"/>
+            <mstr:field instance="1" language="en" name="name" value="1"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="International"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 International Baggage Hall"/>
+            <mstr:field instance="1" name="areaid" value="T1InternationalBaggageHall"/>
+        </mstr:table>
+        <mstr:table code="2" name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="2"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="2"/>
+            <mstr:field instance="1" language="en" name="name" value="2"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="Domestic"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Baggage Belt"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingBaggageBelt"/>
+        </mstr:table>
+        <mstr:table code="3" name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="3"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="3"/>
+            <mstr:field instance="1" language="en" name="name" value="3"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="Domestic"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Baggage Hall"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticBaggageHall"/>
+        </mstr:table>
+        <mstr:table code="4" name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="4"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="4"/>
+            <mstr:field instance="1" language="en" name="name" value="4"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="Domestic"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Baggage Hall"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticBaggageHall"/>
+        </mstr:table>
+        <mstr:table code="5" name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="5"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-05-28T12:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="5"/>
+            <mstr:field instance="1" language="en" name="name" value="5"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="International"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 International Baggage Hall"/>
+            <mstr:field instance="1" name="areaid" value="T1InternationalBaggageHall"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

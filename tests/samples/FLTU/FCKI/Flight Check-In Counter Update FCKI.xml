@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>1130</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>FCKI</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-05-27T07:07:26.338Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">I5</aidx:Airline>
+                <aidx:FlightNumber>1569</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">DXN</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">STV</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-05-26</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData>
+                <aidx:AirportResources Usage="Actual">
+                    <aidx:Resource DepartureOrArrival="Departure">
+                        <aidx:CheckInInfo Location="CHK" Qualifier="CHK" RepeatIndex="1">
+                            <aidx:FirstPosition>203</aidx:FirstPosition>
+                            <aidx:LastPosition>204</aidx:LastPosition>
+                        </aidx:CheckInInfo>
+                    </aidx:Resource>
+                </aidx:AirportResources>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>DEP_2715249</yiapl:AODBFlightID>
+                <yiapl:CounterInformation RepeatIndex="1">
+                    <yiapl:Area>CK</yiapl:Area>
+                    <yiapl:CounterCode>203</yiapl:CounterCode>
+                    <yiapl:CounterStart>2024-05-27T05:15:00.000Z</yiapl:CounterStart>
+                    <yiapl:CounterEnd>2024-05-27T07:30:00.000Z</yiapl:CounterEnd>
+                    <yiapl:Terminal>T1</yiapl:Terminal>
+                    <yiapl:AirlineIATACode>I5</yiapl:AirlineIATACode>
+                    <yiapl:AirlinePaxGHA>I5</yiapl:AirlinePaxGHA>
+                </yiapl:CounterInformation>
+                <yiapl:CounterInformation RepeatIndex="2">
+                    <yiapl:Area>CK</yiapl:Area>
+                    <yiapl:CounterCode>204</yiapl:CounterCode>
+                    <yiapl:CounterStart>2024-05-27T05:15:00.000Z</yiapl:CounterStart>
+                    <yiapl:CounterEnd>2024-05-27T07:30:00.000Z</yiapl:CounterEnd>
+                    <yiapl:Terminal>T1</yiapl:Terminal>
+                    <yiapl:AirlineIATACode>I5</yiapl:AirlineIATACode>
+                    <yiapl:AirlinePaxGHA>I5</yiapl:AirlinePaxGHA>
+                </yiapl:CounterInformation>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

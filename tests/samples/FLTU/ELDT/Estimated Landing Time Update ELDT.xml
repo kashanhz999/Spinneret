@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>535</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>ELDT</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-03-14T10:33:12.601Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">6E</aidx:Airline>
+                <aidx:FlightNumber>6682</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">HYD</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-03-13</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData>
+                <aidx:OperationTime CodeContext="9750" OperationQualifier="TDN" RepeatIndex="1" TimeType="EST">2024-03-14T10:15:00Z</aidx:OperationTime>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>ARR_2742953</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

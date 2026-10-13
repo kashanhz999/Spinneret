@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>5</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>BELT</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-04-15T02:33:57.550Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="delete" code="1 " name="carousel" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="1 "/>
+            <mstr:field instance="1" language="en" name="activefrom" value="2023-10-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-04-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="1 "/>
+            <mstr:field instance="1" language="en" name="name" value="1"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="carousel type" value="International"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 International Baggage Hall"/>
+            <mstr:field instance="1" name="areaid" value="T1InternationalBaggageHall"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>104</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>FLAD</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-05-28T06:02:47.934Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">6E</aidx:Airline>
+                <aidx:FlightNumber>6415</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">DXN</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">CCU</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-05-27</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData>
+                <aidx:CabinClass Class="7" RepeatIndex="1">
+                    <aidx:PaxCount DestinationType="Local" Qualifier="70A" RepeatIndex="1" Usage="Actual">100</aidx:PaxCount>
+                    <aidx:PaxCount Qualifier="IN" RepeatIndex="2" Usage="Actual">2</aidx:PaxCount>
+                    <aidx:PaxCount DestinationType="Transit" Qualifier="70A" RepeatIndex="3" Usage="Actual">0</aidx:PaxCount>
+                    <aidx:SeatCapacity>180</aidx:SeatCapacity>
+                </aidx:CabinClass>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>DEP_2718448</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

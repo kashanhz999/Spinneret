@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>2</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>ARLN</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-07-02T06:24:29.790Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="delete" code="SU|AFL" name="linecode" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="SU"/>
+            <mstr:field instance="1" language="en" name="icao" value="AFL"/>
+            <mstr:field instance="1" language="en" name="name" value="AEROFLOT RUSSIAN AIRLINES"/>
+            <mstr:field instance="1" language="en" name="blacklisted" value=""/>
+            <mstr:field instance="1" language="en" name="validfrom" value=""/>
+            <mstr:field instance="1" language="en" name="validto" value=""/>
+            <mstr:field instance="1" language="en" name="address" value=""/>
+            <mstr:field instance="1" language="en" name="airlinecode" value="555"/>
+            <mstr:field instance="1" language="en" name="homecountry" value="RU"/>
+            <mstr:field instance="1" language="en" name="atccallsign" value=""/>
+            <mstr:field instance="1" language="en" name="billingagencyname" value=""/>
+            <mstr:field instance="1" language="en" name="email" value=""/>
+            <mstr:field instance="1" language="en" name="groundhandler" value=""/>
+            <mstr:field instance="1" language="en" name="phone" value=""/>
+            <mstr:field instance="1" language="en" name="s_type" value="International"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>
+
+

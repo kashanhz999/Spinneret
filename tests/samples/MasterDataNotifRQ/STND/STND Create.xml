@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>24313</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>STND</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-12-06T05:11:19.032Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="replace" code="TST111" name="stands" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="TST111"/>
+            <mstr:field instance="1" language="en" name="hydrant" value=""/>
+            <mstr:field instance="1" language="en" name="length" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exit" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exit" value=""/>
+            <mstr:field instance="1" language="en" name="wingspan" value=""/>
+            <mstr:field instance="1" language="en" name="parkingstandtype" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2" value=""/>
+            <mstr:field instance="1" language="en" name="allowedaircrafttypeicao" value=""/>
+            <mstr:field instance="1" language="en" name="associatedgate" value=""/>
+            <mstr:field instance="1" language="en" name="hangarname" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="TST111"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="area" value="Apron A Contact Stands"/>
+            <mstr:field instance="1" language="en" name="name" value="TST111"/>
+            <mstr:field instance="1" name="areaid" value="ApronAContactStands"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

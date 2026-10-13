@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>1</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>FDLY</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-05-27T07:45:40.545Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">QP</aidx:Airline>
+                <aidx:FlightNumber>1358</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">GOX</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-05-26</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData>
+                <aidx:IrregularityDelay DepartureOrArrival="Arrival" RepeatIndex="1">
+                    <aidx:ReasonCode>14</aidx:ReasonCode>
+                    <aidx:Duration>PT0H30M</aidx:Duration>
+                </aidx:IrregularityDelay>
+                <aidx:IrregularityDelay DepartureOrArrival="Arrival" RepeatIndex="2">
+                    <aidx:ReasonCode>42</aidx:ReasonCode>
+                    <aidx:Duration>PT0H10M</aidx:Duration>
+                </aidx:IrregularityDelay>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>ARR_2773302</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

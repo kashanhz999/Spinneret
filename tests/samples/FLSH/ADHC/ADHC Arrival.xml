@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>173872</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLSH</yiapl:MessageType>
+        <yiapl:MessageSubType>ADHC</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T1</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-12-09T09:21:29.727Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">6E</aidx:Airline>
+                <aidx:FlightNumber>8888</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">BOM</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-12-09</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData FlightClassification="PAX" InternationalStatus="Domestic">
+                <aidx:OperationalStatus CodeContext="9750" RepeatIndex="1">SCT</aidx:OperationalStatus>
+                <aidx:ServiceType>J</aidx:ServiceType>
+                <aidx:PlannedArrivalAptHistory CodeContext="3" RepeatIndex="1">BOM</aidx:PlannedArrivalAptHistory>
+                <aidx:AssociatedFlightLegSchedule RepeatIndex="1">
+                    <aidx:DepartureAirport CodeContext="3">BOM</aidx:DepartureAirport>
+                    <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                </aidx:AssociatedFlightLegSchedule>
+                <aidx:RemarkTextCode CodeContext="9750" Qualifier="TER" RepeatIndex="1">SCT</aidx:RemarkTextCode>
+                <aidx:AirportResources Usage="Actual">
+                    <aidx:Resource DepartureOrArrival="Arrival">
+                        <aidx:AircraftTerminal>T1</aidx:AircraftTerminal>
+                        <aidx:PublicTerminal RepeatIndex="1">T1</aidx:PublicTerminal>
+                    </aidx:Resource>
+                </aidx:AirportResources>
+                <aidx:OperationTime CodeContext="9750" OperationQualifier="ONB" RepeatIndex="1" TimeType="SCT">2024-12-09T09:30:00Z</aidx:OperationTime>
+                <aidx:AircraftInfo>
+                    <aidx:AircraftType>A320</aidx:AircraftType>
+                    <aidx:AircraftSubType>320</aidx:AircraftSubType>
+                    <aidx:AgentInfo DepartureOrArrival="Arrival" Qualifier="0">6E</aidx:AgentInfo>
+                </aidx:AircraftInfo>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>ARR_2827748</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

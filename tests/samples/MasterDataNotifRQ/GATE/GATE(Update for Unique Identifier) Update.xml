@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>10</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>GATE</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-07-03T08:23:14.836Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="replace" code="A10A" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A10A"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="130"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A10"/>
+            <mstr:field instance="1" language="en" name="externalname" value="A10A"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

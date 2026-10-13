@@ -1,0 +1,277 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Spinneret API",
+    "version": "0.1.0",
+    "description": "XML processing middleware for airport integration. Ingests YIAPL/AIDX XML from the AODB, converts the complete document to JSON without alteration, and publishes canonical events to IBM MQ and REST webhooks.\n\nAll `/api/**` endpoints require an `X-API-Key` header."
+  },
+  "tags": [
+    { "name": "Ingestion" },
+    { "name": "Diagnostics" },
+    { "name": "Configuration" },
+    { "name": "Adapters" },
+    { "name": "Operations" }
+  ],
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": { "type": "apiKey", "in": "header", "name": "X-API-Key" }
+    },
+    "parameters": {
+      "TraceId": {
+        "name": "X-Trace-Id", "in": "header", "required": false,
+        "description": "Upstream trace ID to adopt (alphanumerics and -_.: only, max 128 chars). A new one is generated otherwise.",
+        "schema": { "type": "string" }
+      },
+      "AdapterName": {
+        "name": "name", "in": "path", "required": true,
+        "schema": { "type": "string", "enum": ["RestInput", "IbmMqInput"] }
+      }
+    },
+    "requestBodies": {
+      "Xml": {
+        "required": true,
+        "content": {
+          "application/xml": {
+            "schema": { "type": "string" },
+            "example": "<yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl=\"yiapl.co.in/root/schema\" xmlns:aidx=\"http://www.iata.org/IATA/2007/00\">\n  <yiapl:YIAPL_Header>\n    <yiapl:SequenceNumber>1100</yiapl:SequenceNumber>\n    <yiapl:SendingSystem>AODB</yiapl:SendingSystem>\n    <yiapl:MessageType>FLTU</yiapl:MessageType>\n    <yiapl:MessageSubType>FGAT</yiapl:MessageSubType>\n  </yiapl:YIAPL_Header>\n  <aidx:IATA_AIDX_FlightLegNotifRQ Version=\"21.3\">\n    <aidx:FlightLeg>\n      <aidx:LegIdentifier>\n        <aidx:Airline CodeContext=\"3\">I5</aidx:Airline>\n        <aidx:FlightNumber>1569</aidx:FlightNumber>\n        <aidx:OriginDate>2024-05-26</aidx:OriginDate>\n      </aidx:LegIdentifier>\n    </aidx:FlightLeg>\n  </aidx:IATA_AIDX_FlightLegNotifRQ>\n</yiapl:YIAPL_FlightLegNotifRQ>"
+          },
+          "text/plain": { "schema": { "type": "string" } }
+        }
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": { "error": { "type": "string" } }
+      },
+      "Delivery": {
+        "type": "object",
+        "properties": {
+          "output": { "type": "string" },
+          "eventType": { "type": "string" },
+          "ok": { "type": "boolean" },
+          "error": { "type": "string" }
+        }
+      },
+      "IngestResult": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "enum": ["PROCESSED"] },
+          "traceId": { "type": "string" },
+          "intent": { "type": "string", "example": "FLIGHT_GATE_UPDATE" },
+          "businessKey": { "type": "string", "example": "I51569_2024-05-26" },
+          "events": { "type": "integer" },
+          "deliveries": { "type": "array", "items": { "$ref": "#/components/schemas/Delivery" } },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      },
+      "IngestFailure": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string", "enum": ["FAILED"] },
+          "errorKind": { "type": "string", "enum": ["INVALID_XML", "UNKNOWN_MESSAGE_TYPE", "TRANSFORM_FAILED", "PUBLISH_FAILED", "INTERNAL"] },
+          "error": { "type": "string" },
+          "traceId": { "type": "string" },
+          "deliveries": { "type": "array", "items": { "$ref": "#/components/schemas/Delivery" } }
+        }
+      },
+      "FlightEvent": {
+        "type": "object",
+        "description": "Canonical event delivered to outputs (identical to SXPM's FlightEventEntity).",
+        "properties": {
+          "eventId": { "type": "string" },
+          "traceId": { "type": "string" },
+          "eventType": { "type": "string", "description": "Business intent, or PIPELINE_ERROR" },
+          "businessKey": { "type": "string" },
+          "eventTime": { "type": "string", "format": "date-time" },
+          "payloadJson": { "type": "object", "description": "The full XML tree. Prefixes as __prefix, text as __text, attributes as _name." }
+        }
+      },
+      "ChangeResult": {
+        "type": "object",
+        "properties": {
+          "changed": { "type": "array", "items": { "type": "string" } },
+          "restarted": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "StartResult": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "result": { "type": "string", "enum": ["STARTED", "ALREADY_RUNNING", "DISABLED", "FAILED", "STOPPED"] },
+          "error": { "type": "string" }
+        }
+      }
+    },
+    "responses": {
+      "Unauthorized": {
+        "description": "Missing or invalid API key",
+        "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+      }
+    }
+  },
+  "paths": {
+    "/api/ingest": {
+      "post": {
+        "tags": ["Ingestion"],
+        "summary": "Ingest an XML message",
+        "description": "Runs the full pipeline synchronously and returns the outcome. A PIPELINE_ERROR event is published for permanent failures (invalid XML, unsupported type); for delivery failures the caller should retry.",
+        "security": [{ "ApiKeyAuth": [] }],
+        "parameters": [{ "$ref": "#/components/parameters/TraceId" }],
+        "requestBody": { "$ref": "#/components/requestBodies/Xml" },
+        "responses": {
+          "200": { "description": "Processed", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/IngestResult" } } } },
+          "400": { "description": "Invalid XML", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/IngestFailure" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "422": { "description": "Unsupported MessageType/MessageSubType", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/IngestFailure" } } } },
+          "500": { "description": "Internal error", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/IngestFailure" } } } },
+          "502": { "description": "A required output could not accept the event; retry later", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/IngestFailure" } } } },
+          "503": { "description": "REST input adapter stopped or disabled", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } } }
+        }
+      }
+    },
+    "/api/test/ingest": {
+      "post": {
+        "tags": ["Diagnostics"],
+        "summary": "Diagnostic ingestion report",
+        "description": "Runs every stage and returns the parsed input, events, deliveries and audit log. Dry run by default: nothing is published unless `publish=true`.",
+        "security": [{ "ApiKeyAuth": [] }],
+        "parameters": [
+          { "$ref": "#/components/parameters/TraceId" },
+          { "name": "publish", "in": "query", "required": false, "schema": { "type": "boolean", "default": false } }
+        ],
+        "requestBody": { "$ref": "#/components/requestBodies/Xml" },
+        "responses": {
+          "200": { "description": "Report (status SUCCESS)", "content": { "application/json": { "schema": { "type": "object" } } } },
+          "400": { "description": "Report (invalid XML)" },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "422": { "description": "Report (unsupported type)" }
+        }
+      }
+    },
+    "/api/admin/config": {
+      "get": {
+        "tags": ["Configuration"],
+        "summary": "Effective configuration",
+        "description": "Every supported key with its current value. Passwords are masked.",
+        "security": [{ "ApiKeyAuth": [] }],
+        "responses": {
+          "200": { "description": "Configuration", "content": { "application/json": { "schema": { "type": "object", "additionalProperties": true } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" }
+        }
+      },
+      "put": {
+        "tags": ["Configuration"],
+        "summary": "Update configuration",
+        "description": "Validates and persists the given keys (null resets a key to its default), keeps the previous file as a backup, and restarts affected adapters. Unknown keys and wrong types are rejected.",
+        "security": [{ "ApiKeyAuth": [] }],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "type": "object" }, "example": { "adapters.output.rest.enabled": true, "adapters.output.rest.url": "http://localhost:3000/api/v1/webhook" } } }
+        },
+        "responses": {
+          "200": { "description": "Updated", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ChangeResult" } } } },
+          "400": { "description": "Invalid key or value", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "500": { "description": "Could not write the configuration file" }
+        }
+      }
+    },
+    "/api/admin/config/restore": {
+      "post": {
+        "tags": ["Configuration"],
+        "summary": "Swap configuration with its backup",
+        "security": [{ "ApiKeyAuth": [] }],
+        "responses": {
+          "200": { "description": "Restored", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ChangeResult" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "404": { "description": "No backup exists" }
+        }
+      }
+    },
+    "/api/admin/config/templates": {
+      "get": {
+        "tags": ["Configuration"],
+        "summary": "List configuration templates",
+        "security": [{ "ApiKeyAuth": [] }],
+        "responses": {
+          "200": { "description": "Template names", "content": { "application/json": { "schema": { "type": "array", "items": { "type": "string" } } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" }
+        }
+      }
+    },
+    "/api/admin/config/template/{name}": {
+      "post": {
+        "tags": ["Configuration"],
+        "summary": "Apply a configuration template",
+        "security": [{ "ApiKeyAuth": [] }],
+        "parameters": [{ "name": "name", "in": "path", "required": true, "schema": { "type": "string", "example": "rest-only" } }],
+        "responses": {
+          "200": { "description": "Applied", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ChangeResult" } } } },
+          "400": { "description": "Invalid template name or content" },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "404": { "description": "Unknown template" }
+        }
+      }
+    },
+    "/api/admin/adapters": {
+      "get": {
+        "tags": ["Adapters"],
+        "summary": "Adapter inventory and health",
+        "security": [{ "ApiKeyAuth": [] }],
+        "responses": {
+          "200": { "description": "Inputs and outputs", "content": { "application/json": { "schema": { "type": "object" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" }
+        }
+      }
+    },
+    "/api/admin/adapters/{name}/start": {
+      "post": {
+        "tags": ["Adapters"],
+        "summary": "Start an input adapter",
+        "security": [{ "ApiKeyAuth": [] }],
+        "parameters": [{ "$ref": "#/components/parameters/AdapterName" }],
+        "responses": {
+          "200": { "description": "Started or already running", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/StartResult" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "404": { "description": "No such adapter" },
+          "409": { "description": "Adapter disabled in configuration", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/StartResult" } } } },
+          "500": { "description": "Adapter failed to start", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/StartResult" } } } }
+        }
+      }
+    },
+    "/api/admin/adapters/{name}/stop": {
+      "post": {
+        "tags": ["Adapters"],
+        "summary": "Stop an input adapter",
+        "security": [{ "ApiKeyAuth": [] }],
+        "parameters": [{ "$ref": "#/components/parameters/AdapterName" }],
+        "responses": {
+          "200": { "description": "Stopped", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/StartResult" } } } },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "404": { "description": "No such adapter" }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": ["Operations"],
+        "summary": "Health of enabled adapters",
+        "responses": { "200": { "description": "UP" }, "503": { "description": "DEGRADED" } }
+      }
+    },
+    "/health/live": {
+      "get": { "tags": ["Operations"], "summary": "Liveness probe", "responses": { "200": { "description": "UP" } } }
+    },
+    "/metrics": {
+      "get": {
+        "tags": ["Operations"],
+        "summary": "Prometheus metrics",
+        "responses": { "200": { "description": "Text exposition format", "content": { "text/plain": { "schema": { "type": "string" } } } } }
+      }
+    },
+    "/info": {
+      "get": { "tags": ["Operations"], "summary": "Name, version and build features", "responses": { "200": { "description": "Build info" } } }
+    }
+  }
+}

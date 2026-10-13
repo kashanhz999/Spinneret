@@ -1,0 +1,7 @@
+{
+  "ibm.mq.queueManager": "QM_PROD",
+  "ibm.mq.connName": "mqserver1(1414),mqserver2(1414)",
+  "ibm.mq.channel": "PROD.SVRCONN",
+  "adapters.input.ibmmq.queue": "PROD.INPUT",
+  "adapters.output.ibmmq.queue": "PROD.OUTPUT"
+}

@@ -1,0 +1,6 @@
+{
+  "adapters.input.ibmmq.enabled": false,
+  "adapters.output.ibmmq.enabled": false,
+  "adapters.input.rest.enabled": true,
+  "adapters.output.rest.enabled": true
+}

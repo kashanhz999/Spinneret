@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>2</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>ATYP</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-05-28T07:01:00.045Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>3</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="73H|B738" name="aircrafttype" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="73H"/>
+            <mstr:field instance="1" language="en" name="icao" value="B738"/>
+            <mstr:field instance="1" language="en" name="name" value="Boeing 737-800 (winglets) pax"/>
+            <mstr:field instance="1" language="en" name="height" value="12.62"/>
+            <mstr:field instance="1" language="en" name="length" value="39.47"/>
+            <mstr:field instance="1" language="en" name="width" value="35.79"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="category" value="C"/>
+            <mstr:field instance="1" language="en" name="classification" value=""/>
+            <mstr:field instance="1" language="en" name="fuselageclassification" value=""/>
+        </mstr:table>
+        <mstr:table code="7MJ|B3JM" name="aircrafttype" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="7MJ"/>
+            <mstr:field instance="1" language="en" name="icao" value="B3JM"/>
+            <mstr:field instance="1" language="en" name="name" value="737-10 MAX"/>
+            <mstr:field instance="1" language="en" name="height" value="12.3"/>
+            <mstr:field instance="1" language="en" name="length" value="44.28"/>
+            <mstr:field instance="1" language="en" name="width" value="35.92"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="category" value="C"/>
+            <mstr:field instance="1" language="en" name="classification" value=""/>
+            <mstr:field instance="1" language="en" name="fuselageclassification" value=""/>
+        </mstr:table>
+        <mstr:table code="76Y|B763" name="aircrafttype" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="76Y"/>
+            <mstr:field instance="1" language="en" name="icao" value="B763"/>
+            <mstr:field instance="1" language="en" name="name" value="Boeing 767-300 Freighter"/>
+            <mstr:field instance="1" language="en" name="height" value="16.13"/>
+            <mstr:field instance="1" language="en" name="length" value="54.92"/>
+            <mstr:field instance="1" language="en" name="width" value="47.57"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="category" value="D"/>
+            <mstr:field instance="1" language="en" name="classification" value=""/>
+            <mstr:field instance="1" language="en" name="fuselageclassification" value=""/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

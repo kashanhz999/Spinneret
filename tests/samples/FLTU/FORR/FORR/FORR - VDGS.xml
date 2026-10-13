@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yiapl:YIAPL_FlightLegRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegRQ.xsd ">
+	<yiapl:YIAPL_Header>
+		<yiapl:SequenceNumber>235</yiapl:SequenceNumber>
+		<yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+		<yiapl:DestinationSystem>VDGS</yiapl:DestinationSystem>
+		<yiapl:MessageType>FLTU</yiapl:MessageType>
+		<yiapl:MessageSubType>FORR</yiapl:MessageSubType>
+		<yiapl:ScheduleStartDateTime>2023-06-22T00:00:01.001Z</yiapl:ScheduleStartDateTime>
+		<yiapl:ScheduleEndDateTime>2023-06-22T23:59:59.001Z</yiapl:ScheduleEndDateTime>
+		<yiapl:ServiceType>J</yiapl:ServiceType>
+		<yiapl:Terminal>T1</yiapl:Terminal>
+		<yiapl:OriginatorTimeStamp>2023-06-21T11:00:01.001Z
+		</yiapl:OriginatorTimeStamp>
+	</yiapl:YIAPL_Header>
+	<aidx:IATA_AIDX_FlightLegRQ Target="Production" Version="21.3">
+		<aidx:Airline Code="6E" CodeContext="3"/>
+	</aidx:IATA_AIDX_FlightLegRQ>
+</yiapl:YIAPL_FlightLegRQ>

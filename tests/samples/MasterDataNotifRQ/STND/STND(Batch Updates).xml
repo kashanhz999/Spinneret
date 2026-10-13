@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>24323</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>STND</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-12-06T06:25:00.103Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>4</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="A06" name="stands" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A06"/>
+            <mstr:field instance="1" language="en" name="hydrant" value=""/>
+            <mstr:field instance="1" language="en" name="length" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exit" value="15"/>
+            <mstr:field instance="1" language="en" name="rwy1exot" value="15"/>
+            <mstr:field instance="1" language="en" name="rwy2exot" value="15"/>
+            <mstr:field instance="1" language="en" name="rwy2exit" value="15"/>
+            <mstr:field instance="1" language="en" name="wingspan" value="36"/>
+            <mstr:field instance="1" language="en" name="parkingstandtype" value="Contact"/>
+            <mstr:field instance="1" language="en" name="rwy1" value="28R"/>
+            <mstr:field instance="1" language="en" name="rwy2" value="10L"/>
+            <mstr:field instance="1" language="en" name="allowedaircrafttypeicao" value="Code C"/>
+            <mstr:field instance="1" language="en" name="associatedgate" value="A06"/>
+            <mstr:field instance="1" language="en" name="hangarname" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A06"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="area" value="Apron A Contact Stands"/>
+            <mstr:field instance="1" language="en" name="name" value="A06"/>
+            <mstr:field instance="1" name="areaid" value="ApronAContactStands"/>
+        </mstr:table>
+        <mstr:table code="Test" name="stands" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="Test"/>
+            <mstr:field instance="1" language="en" name="hydrant" value=""/>
+            <mstr:field instance="1" language="en" name="length" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exit" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exit" value=""/>
+            <mstr:field instance="1" language="en" name="wingspan" value=""/>
+            <mstr:field instance="1" language="en" name="parkingstandtype" value="Remote"/>
+            <mstr:field instance="1" language="en" name="rwy1" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2" value=""/>
+            <mstr:field instance="1" language="en" name="allowedaircrafttypeicao" value=""/>
+            <mstr:field instance="1" language="en" name="associatedgate" value=""/>
+            <mstr:field instance="1" language="en" name="hangarname" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="Test"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-05-31T00:00:00"/>
+            <mstr:field instance="1" language="en" name="area" value="Apron A Remote Stands"/>
+            <mstr:field instance="1" language="en" name="name" value="Test"/>
+            <mstr:field instance="1" name="areaid" value="ApronARemoteStands"/>
+        </mstr:table>
+        <mstr:table code="S1" name="stands" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="S1"/>
+            <mstr:field instance="1" language="en" name="hydrant" value=""/>
+            <mstr:field instance="1" language="en" name="length" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exit" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exit" value=""/>
+            <mstr:field instance="1" language="en" name="wingspan" value=""/>
+            <mstr:field instance="1" language="en" name="parkingstandtype" value="Contact"/>
+            <mstr:field instance="1" language="en" name="rwy1" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2" value=""/>
+            <mstr:field instance="1" language="en" name="allowedaircrafttypeicao" value=""/>
+            <mstr:field instance="1" language="en" name="associatedgate" value="S1"/>
+            <mstr:field instance="1" language="en" name="hangarname" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="S1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value="2024-05-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-05-19T00:00:00"/>
+            <mstr:field instance="1" language="en" name="area" value="Apron A Contact Stands"/>
+            <mstr:field instance="1" language="en" name="name" value="S1"/>
+            <mstr:field instance="1" name="areaid" value="ApronAContactStands"/>
+        </mstr:table>
+        <mstr:table code="W2" name="stands" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="W2"/>
+            <mstr:field instance="1" language="en" name="hydrant" value=""/>
+            <mstr:field instance="1" language="en" name="length" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exit" value=""/>
+            <mstr:field instance="1" language="en" name="rwy1exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exot" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2exit" value=""/>
+            <mstr:field instance="1" language="en" name="wingspan" value=""/>
+            <mstr:field instance="1" language="en" name="parkingstandtype" value="Remote"/>
+            <mstr:field instance="1" language="en" name="rwy1" value=""/>
+            <mstr:field instance="1" language="en" name="rwy2" value=""/>
+            <mstr:field instance="1" language="en" name="allowedaircrafttypeicao" value=""/>
+            <mstr:field instance="1" language="en" name="associatedgate" value=""/>
+            <mstr:field instance="1" language="en" name="hangarname" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="W2"/>
+            <mstr:field instance="1" language="en" name="activefrom" value="2024-07-18T00:00:00"/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="area" value="Cargo Stands"/>
+            <mstr:field instance="1" language="en" name="name" value="W2"/>
+            <mstr:field instance="1" name="areaid" value="CargoStands"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

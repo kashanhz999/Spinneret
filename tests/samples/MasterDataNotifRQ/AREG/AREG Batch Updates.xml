@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>3</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>AREG</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-05-28T07:04:00.058Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>6</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="LYLEO" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value="335"/>
+            <mstr:field instance="1" language="en" name="company" value="SG"/>
+            <mstr:field instance="1" language="en" name="mtow" value="230000"/>
+            <mstr:field instance="1" language="en" name="iata" value="333"/>
+            <mstr:field instance="1" language="en" name="icao" value="A333"/>
+        </mstr:table>
+        <mstr:table code="VTIIIN" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value=""/>
+            <mstr:field instance="1" language="en" name="company" value=""/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="iata" value="32A"/>
+            <mstr:field instance="1" language="en" name="icao" value="A320"/>
+        </mstr:table>
+        <mstr:table code="GZBJB" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value=""/>
+            <mstr:field instance="1" language="en" name="company" value="BA"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="iata" value="788"/>
+            <mstr:field instance="1" language="en" name="icao" value="B788"/>
+        </mstr:table>
+        <mstr:table code="GZBJA" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value=""/>
+            <mstr:field instance="1" language="en" name="company" value="BA"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="iata" value="788"/>
+            <mstr:field instance="1" language="en" name="icao" value="B788"/>
+        </mstr:table>
+        <mstr:table code="VTINB" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value=""/>
+            <mstr:field instance="1" language="en" name="company" value=""/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="iata" value="320"/>
+            <mstr:field instance="1" language="en" name="icao" value="A320"/>
+        </mstr:table>
+        <mstr:table code="VTXXX" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value=""/>
+            <mstr:field instance="1" language="en" name="company" value=""/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="iata" value="321"/>
+            <mstr:field instance="1" language="en" name="icao" value="A321"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

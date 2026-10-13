@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>7</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>MAKE</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-07-02T08:42:59.043Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="delete" code="MUC01" name="chutes" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>
+

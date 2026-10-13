@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>15054</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>GATE</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-11-21T07:04:00.157Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>25</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="A20a" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A20a"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A20a"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A20a"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="10"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A20" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A20"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A20"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A20"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="0"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="Test002" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="Test002"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-09-15T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="Test002"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Arrival Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="Test001"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="0"/>
+            <mstr:field instance="1" name="areaid" value="T1ArrivalGates"/>
+        </mstr:table>
+        <mstr:table code="2" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="2"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2023-05-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="2"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Arrival Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="2"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Bussing DOM"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value=""/>
+            <mstr:field instance="1" language="en" name="sortorder" value="220"/>
+            <mstr:field instance="1" name="areaid" value="T1ArrivalGates"/>
+        </mstr:table>
+        <mstr:table code="Test01" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="Test01"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-07-08T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="Test01"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Arrival Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="Test01"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Remote"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="0"/>
+            <mstr:field instance="1" name="areaid" value="T1ArrivalGates"/>
+        </mstr:table>
+        <mstr:table code="A10" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A10"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A10"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A10"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="130"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A14b" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A14b"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A14b"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A14b"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="75"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="A8" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A8"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A8"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A8"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="140"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A42" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A42"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A42"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Bus Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A42"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Bussing"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="170"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticBusGates"/>
+        </mstr:table>
+        <mstr:table code="D14" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="D14"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="D14"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="D14"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="80"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="D14a" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="D14a"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="D14a"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="D14a"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="85"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="A14" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A14"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A14"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A14"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="60"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="1" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-05-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Arrival Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="1"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value=""/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="210"/>
+            <mstr:field instance="1" name="areaid" value="T1ArrivalGates"/>
+        </mstr:table>
+        <mstr:table code="A16" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A16"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A16"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A16"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="30"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="S01" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="S01"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-02-01T00:00:00"/>
+            <mstr:field instance="1" language="en" name="externalname" value="S01"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="S01"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="250"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A12" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A12"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A12"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A12"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="110"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A16a" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A16a"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A16a"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A16a"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="40"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A14a" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A14a"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A14a"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A14a"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="70"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="A40" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A40"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A40"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Bus Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A40"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Bussing"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="180"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingBusGates"/>
+        </mstr:table>
+        <mstr:table code="A6" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A6"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A6"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A6"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="150"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="D14b" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="D14b"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="D14b"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="D14b"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="90"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingContactGates"/>
+        </mstr:table>
+        <mstr:table code="D40" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="D40"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="D40"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Swing Bus Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="D40"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Bussing"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="190"/>
+            <mstr:field instance="1" name="areaid" value="T1SwingBusGates"/>
+        </mstr:table>
+        <mstr:table code="A16b" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A16b"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A16b"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A16b"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="50"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A20b" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A20b"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A20b"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Contact Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A20b"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Aerobridge"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="20"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticContactGates"/>
+        </mstr:table>
+        <mstr:table code="A44" name="gate" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="A44"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="A44"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Domestic Bus Gates"/>
+            <mstr:field instance="1" language="en" name="name" value="A44"/>
+            <mstr:field instance="1" language="en" name="ogate" value=""/>
+            <mstr:field instance="1" language="en" name="type" value="Bussing"/>
+            <mstr:field instance="1" language="en" name="notelnbr" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="sortorder" value="160"/>
+            <mstr:field instance="1" name="areaid" value="T1DomesticBusGates"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

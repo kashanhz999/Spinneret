@@ -1,0 +1,14 @@
+#pragma once
+
+namespace spinneret {
+
+inline constexpr const char* kName = "Spinneret";
+inline constexpr const char* kVersion = "@PROJECT_VERSION@";
+
+#ifdef SPINNERET_WITH_IBMMQ
+inline constexpr bool kWithIbmMq = true;
+#else
+inline constexpr bool kWithIbmMq = false;
+#endif
+
+}  // namespace spinneret

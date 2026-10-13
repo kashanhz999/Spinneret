@@ -1,0 +1,9 @@
+{
+  "ibm.mq.queueManager": "QM_DEV",
+  "ibm.mq.connName": "localhost(1414)",
+  "ibm.mq.channel": "DEV.SVRCONN",
+  "adapters.input.ibmmq.queue": "DEV.IN",
+  "adapters.output.ibmmq.queue": "DEV.OUT",
+  "adapters.input.ibmmq.enabled": true,
+  "adapters.output.rest.enabled": true
+}

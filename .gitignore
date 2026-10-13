@@ -1,0 +1,32 @@
+# Build output
+build/
+build-*/
+cmake-build-*/
+out/
+compile_commands.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Runtime state — created by Spinneret, never committed
+config/runtime-config.json
+config/config-backup.json
+config/api-keys.json
+config/*.tmp
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.kdb
+*.sth

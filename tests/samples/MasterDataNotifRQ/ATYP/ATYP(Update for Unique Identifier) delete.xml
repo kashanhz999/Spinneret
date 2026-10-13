@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>15576</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>ATYP</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-11-25T08:47:49.139Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="delete" code="TST|T124" name="aircrafttype" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="TST2"/>
+            <mstr:field instance="1" language="en" name="icao" value="T124"/>
+            <mstr:field instance="1" language="en" name="name" value="Test Airport"/>
+            <mstr:field instance="1" language="en" name="height" value="298"/>
+            <mstr:field instance="1" language="en" name="length" value="234"/>
+            <mstr:field instance="1" language="en" name="width" value="453"/>
+            <mstr:field instance="1" language="en" name="mtow" value=""/>
+            <mstr:field instance="1" language="en" name="category" value=""/>
+            <mstr:field instance="1" language="en" name="classification" value=""/>
+            <mstr:field instance="1" language="en" name="fuselageclassification" value=""/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>3</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>ARPT</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-06-21T07:56:00.536Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="replace" code="BAH|OBBI" name="city" site_iata="*">
+            <mstr:field instance="1" language="en" name="iata" value="BAH"/>
+            <mstr:field instance="1" language="en" name="icao" value="OBBI"/>
+            <mstr:field instance="1" language="en" name="name" value="Bahrain International Airport"/>
+            <mstr:field instance="1" language="en" name="city" value="Bahrain"/>
+            <mstr:field instance="1" language="hi" name="cityhindi" value="├á┬ñ┬¼├á┬ñ┬╣├á┬ñ┬░├á┬ÑΓé¼├á┬ñ┬¿"/>
+            <mstr:field instance="1" language="en" name="country" value="BH1"/>
+            <mstr:field instance="1" language="en" name="amsairportcustomstype" value="I"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

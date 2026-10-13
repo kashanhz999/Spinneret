@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>10</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>MAKE</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-05-28T07:12:00.010Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>11</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="MUC01" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC01"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC09" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC09"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC09"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC09"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC04" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC04"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC04"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC04"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC06" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC06"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC06"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC06"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC07" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC07"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC07"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC07"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC03" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC03"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC03"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC03"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC05" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC05"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC05"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC05"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC08" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC08"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC08"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC08"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC02" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC02"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC02"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC02"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC10" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC10"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="name" value="MUC10"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T2"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC10"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+        <mstr:table code="MUC010" name="chute" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="MUC010"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value="2024-05-29T12:15:00"/>
+            <mstr:field instance="1" language="en" name="name" value="MUC010"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T2"/>
+            <mstr:field instance="1" language="en" name="area" value="T1 Baggage Makeup Area"/>
+            <mstr:field instance="1" language="en" name="externalname" value="MUC010"/>
+            <mstr:field instance="1" language="en" name="maintenanceenddate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancestartdate" value=""/>
+            <mstr:field instance="1" language="en" name="maintenanceremarks" value=""/>
+            <mstr:field instance="1" language="en" name="maintenancetype" value=""/>
+            <mstr:field instance="1" name="areaid" value="T1BaggageMakeupArea"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

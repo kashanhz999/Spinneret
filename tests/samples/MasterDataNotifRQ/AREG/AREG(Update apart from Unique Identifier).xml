@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>5</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>AREG</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-07-03T08:00:13.275Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>1</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table action="replace" code="LYLE" name="aircraft" site_iata="*">
+            <mstr:field instance="1" language="en" name="businessclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="economyclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="firstclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="premiumecoclassseats" value=""/>
+            <mstr:field instance="1" language="en" name="isretired" value="false"/>
+            <mstr:field instance="1" language="en" name="maxpax" value="335"/>
+            <mstr:field instance="1" language="en" name="company" value="SG"/>
+            <mstr:field instance="1" language="en" name="mtow" value="230000"/>
+            <mstr:field instance="1" language="en" name="iata" value="333"/>
+            <mstr:field instance="1" language="en" name="icao" value="A333"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>

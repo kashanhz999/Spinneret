@@ -1,0 +1,52 @@
+<yiapl:YIAPL_FlightLegNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:aidx="http://www.iata.org/IATA/2007/00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_FlightLegNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>93</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>FLTU</yiapl:MessageType>
+        <yiapl:MessageSubType>FTRM</yiapl:MessageSubType>
+        <yiapl:ServiceType>J</yiapl:ServiceType>
+        <yiapl:Terminal>T2</yiapl:Terminal>
+        <yiapl:OriginatorTimeStamp>2024-05-28T05:57:21.404Z</yiapl:OriginatorTimeStamp>
+    </yiapl:YIAPL_Header>
+    <aidx:IATA_AIDX_FlightLegNotifRQ Version="21.3">
+        <aidx:Originator Code="aero.sita" CompanyShortName="SITA"/>
+        <aidx:DeliveringSystem Code="ICAD.com" CompanyShortName="ICAD"/>
+        <aidx:FlightLeg>
+            <aidx:LegIdentifier>
+                <aidx:Airline CodeContext="3">I5</aidx:Airline>
+                <aidx:FlightNumber>0560</aidx:FlightNumber>
+                <aidx:DepartureAirport CodeContext="3">BBI</aidx:DepartureAirport>
+                <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                <aidx:OriginDate>2024-05-28</aidx:OriginDate>
+            </aidx:LegIdentifier>
+            <aidx:LegData FlightClassification="PAX" InternationalStatus="Domestic">
+                <aidx:OperationalStatus CodeContext="9750" RepeatIndex="1">SCT</aidx:OperationalStatus>
+                <aidx:ServiceType>J</aidx:ServiceType>
+                <aidx:PlannedArrivalAptHistory CodeContext="3" RepeatIndex="1">BBI</aidx:PlannedArrivalAptHistory>
+                <aidx:CabinClass Class="7" RepeatIndex="1">
+                    <aidx:SeatCapacity>180</aidx:SeatCapacity>
+                </aidx:CabinClass>
+                <aidx:AssociatedFlightLegSchedule RepeatIndex="1">
+                    <aidx:DepartureAirport CodeContext="3">BBI</aidx:DepartureAirport>
+                    <aidx:ArrivalAirport CodeContext="3">DXN</aidx:ArrivalAirport>
+                </aidx:AssociatedFlightLegSchedule>
+                <aidx:RemarkTextCode CodeContext="9750" Qualifier="TER" RepeatIndex="1">SCT</aidx:RemarkTextCode>
+                <aidx:AirportResources Usage="Actual">
+                    <aidx:Resource DepartureOrArrival="Arrival">
+                        <aidx:AircraftTerminal>T2</aidx:AircraftTerminal>
+                        <aidx:PublicTerminal RepeatIndex="1">T2</aidx:PublicTerminal>
+                    </aidx:Resource>
+                </aidx:AirportResources>
+                <aidx:OperationTime CodeContext="9750" OperationQualifier="ONB" RepeatIndex="1" TimeType="SCT">2024-05-28T09:15:00Z</aidx:OperationTime>
+                <aidx:AircraftInfo>
+                    <aidx:AircraftType>A320</aidx:AircraftType>
+                    <aidx:AircraftSubType>320</aidx:AircraftSubType>
+                    <aidx:AgentInfo DepartureOrArrival="Arrival" Qualifier="0">I5</aidx:AgentInfo>
+                </aidx:AircraftInfo>
+            </aidx:LegData>
+            <aidx:TPA_Extension>
+                <yiapl:AODBFlightID>ARR_2777761</yiapl:AODBFlightID>
+            </aidx:TPA_Extension>
+        </aidx:FlightLeg>
+    </aidx:IATA_AIDX_FlightLegNotifRQ>
+</yiapl:YIAPL_FlightLegNotifRQ>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><yiapl:YIAPL_MasterDataNotifRQ xmlns:yiapl="yiapl.co.in/root/schema" xmlns:mstr="yiapl.co.in/masterdata/connect/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="yiapl.co.in/root/schema YIAPL_MasterDataNotifRQ.xsd">
+    <yiapl:YIAPL_Header>
+        <yiapl:SequenceNumber>15055</yiapl:SequenceNumber>
+        <yiapl:SendingSystem>AODB</yiapl:SendingSystem>
+        <yiapl:MessageType>MSTR</yiapl:MessageType>
+        <yiapl:MessageSubType>CHCK</yiapl:MessageSubType>
+        <yiapl:OriginatorTimeStamp>2024-11-21T07:06:00.133Z</yiapl:OriginatorTimeStamp>
+        <yiapl:Records>5</yiapl:Records>
+    </yiapl:YIAPL_Header>
+    <mstr:connect name="AMS" version="1.0">
+        <mstr:table code="312" name="counters" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="312"/>
+            <mstr:field instance="1" language="en" name="sbd" value="True"/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="312"/>
+            <mstr:field instance="1" language="en" name="area" value="Row 3 SBD"/>
+            <mstr:field instance="1" language="en" name="name" value="312"/>
+            <mstr:field instance="1" name="areaid" value="Row3SBD"/>
+        </mstr:table>
+        <mstr:table code="401" name="counters" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="401"/>
+            <mstr:field instance="1" language="en" name="sbd" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="401"/>
+            <mstr:field instance="1" language="en" name="area" value="Row 4"/>
+            <mstr:field instance="1" language="en" name="name" value="401"/>
+            <mstr:field instance="1" name="areaid" value="Row4"/>
+        </mstr:table>
+        <mstr:table code="402" name="counters" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="402"/>
+            <mstr:field instance="1" language="en" name="sbd" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="402"/>
+            <mstr:field instance="1" language="en" name="area" value="Row 4"/>
+            <mstr:field instance="1" language="en" name="name" value="402"/>
+            <mstr:field instance="1" name="areaid" value="Row4"/>
+        </mstr:table>
+        <mstr:table code="403" name="counters" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="403"/>
+            <mstr:field instance="1" language="en" name="sbd" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="403"/>
+            <mstr:field instance="1" language="en" name="area" value="Row 4"/>
+            <mstr:field instance="1" language="en" name="name" value="403"/>
+            <mstr:field instance="1" name="areaid" value="Row4"/>
+        </mstr:table>
+        <mstr:table code="404" name="counters" site_iata="DXN">
+            <mstr:field instance="1" language="en" name="default" value="404"/>
+            <mstr:field instance="1" language="en" name="sbd" value=""/>
+            <mstr:field instance="1" language="en" name="terminal" value="T1"/>
+            <mstr:field instance="1" language="en" name="activefrom" value=""/>
+            <mstr:field instance="1" language="en" name="activeto" value=""/>
+            <mstr:field instance="1" language="en" name="externalname" value="404"/>
+            <mstr:field instance="1" language="en" name="area" value="Row 4"/>
+            <mstr:field instance="1" language="en" name="name" value="404"/>
+            <mstr:field instance="1" name="areaid" value="Row4"/>
+        </mstr:table>
+    </mstr:connect>
+</yiapl:YIAPL_MasterDataNotifRQ>
