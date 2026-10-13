@@ -22,8 +22,8 @@ The complete list is in [message_types.cpp](src/spinneret/domain/message_types.c
 ## How a message is processed
 
 ```
- IBM MQ queue ─┐                                                        ┌─▶ IBM MQ queue
-               ├─▶ 1 Header ─▶ 2 Intent ─▶ 3 XML→JSON ─▶ 4 Transform ─▶ ├
+ IBM MQ queue ─┐                                                               ┌─▶ IBM MQ queue
+               ├─▶ 1 Header ─▶ 2 Intent ─▶ 3 XML→JSON ─▶ 4 Transform     ─▶ ├
  POST /api/ingest                              5 Correlate · Publish · 6 Audit └─▶ Webhook (POST)
 ```
 
