@@ -2,7 +2,7 @@
 
 **XML processing middleware for airport integration**, written in C++20.
 
-Spinneret sits between an Airport Operational Database (AODB) and downstream airport systems. It takes in YIAPL/IATA AIDX XML messages, converts the **whole XML document to JSON without changing anything**, and publishes canonical events to IBM MQ queues and REST webhooks.
+Spinneret sits between an Airport Operational Database (AODB) and downstream airport systems. It takes in IATA AIDX XML messages, converts the **whole XML document to JSON without changing anything**, and publishes canonical events to IBM MQ queues and REST webhooks.
 
 Spinneret is a C++ rewrite of the Java/Spring Boot service **SXPM**. Its output is identical to SXPM's, so existing consumers keep working unchanged. Several operational problems in SXPM are fixed; see [Differences from SXPM](#differences-from-sxpm).
 
@@ -27,7 +27,7 @@ The complete list is in [message_types.cpp](src/spinneret/domain/message_types.c
  POST /api/ingest                              5 Correlate · Publish · 6 Audit └─▶ Webhook (POST)
 ```
 
-1. **Header:** parses the XML once and reads `YIAPL_Header`: MessageType, MessageSubType, SequenceNumber and so on.
+1. **Header:** parses the XML once and reads `XXXXX_Header`: MessageType, MessageSubType, SequenceNumber and so on.
 2. **Intent:** maps the type and subtype to a business intent, e.g. `FLTU/FGAT` → `FLIGHT_GATE_UPDATE`.
 3. **XML → JSON:** converts the full tree:
    - namespace prefix → `__prefix`
@@ -47,7 +47,7 @@ The event each output receives:
   "eventType": "FLIGHT_GATE_UPDATE",
   "businessKey": "I51569_2024-05-26",
   "eventTime": "2026-10-13T09:40:24.799Z",
-  "payloadJson": { "YIAPL_FlightLegNotifRQ": { "__prefix": "yiapl", "YIAPL_Header": { … } } }
+  "payloadJson": { "XXXXX_FlightLegNotifRQ": { "__prefix": "XXXXX", "XXXXX_Header": { … } } }
 }
 ```
 
