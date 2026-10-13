@@ -22,9 +22,18 @@ The complete list is in [message_types.cpp](src/spinneret/domain/message_types.c
 ## How a message is processed
 
 ```
- IBM MQ queue ─┐                                                               ┌─▶ IBM MQ queue
-               ├─▶ 1 Header ─▶ 2 Intent ─▶ 3 XML→JSON ─▶ 4 Transform     ─▶ ├
- POST /api/ingest                              5 Correlate · Publish · 6 Audit └─▶ Webhook (POST)
+       INPUTS                          PIPELINE                                OUTPUTS
+
+┌──────────────────┐     ┌────────────────────────────────────────┐     ┌──────────────────┐
+│ IBM MQ queue     │──┐  │ 1. Header      read message header     │  ┌─▶│ IBM MQ queue     │
+└──────────────────┘  │  │ 2. Intent      type/subtype → intent   │  │  └──────────────────┘
+                      │  │ 3. XML → JSON  full tree, unaltered    │  │
+                      ├─▶│ 4. Transform   event + business key    │──┤
+                      │  │ 5. Correlate   trace ID on all logs    │  │
+┌──────────────────┐  │  │    Publish     to every enabled output │  │  ┌──────────────────┐
+│ POST /api/ingest │──┘  │ 6. Audit       journey logged          │  └─▶│ Webhook (POST)   │
+└──────────────────┘     └────────────────────────────────────────┘     └──────────────────┘
+
 ```
 
 1. **Header:** parses the XML once and reads `XXXXX_Header`: MessageType, MessageSubType, SequenceNumber and so on.
